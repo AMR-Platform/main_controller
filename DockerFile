@@ -1,0 +1,19 @@
+########## Base image is passed in from build.sh ##########
+ARG BASE
+FROM ${BASE}
+
+# ─── Common packages (run on BOTH arches) ─────────────────
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        python3-vcstool ros-humble-nav2-map-server && \
+    rm -rf /var/lib/apt/lists/*
+
+# ─── Jetson-only extras ───────────────────────────────────
+RUN if [ "$(uname -m)" = "aarch64" ]; then \
+        apt-get update && apt-get install -y --no-install-recommends \
+            libnvinfer8 libvpi1 && \
+        rm -rf /var/lib/apt/lists/* ; \
+    fi
+
+# Workspace mountpoint
+WORKDIR /workspace
