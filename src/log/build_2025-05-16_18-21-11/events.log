@@ -1,0 +1,480 @@
+[0.000000] (-) TimerEvent: {}
+[0.001838] (lakibeam1) JobQueued: {'identifier': 'lakibeam1', 'dependencies': OrderedDict()}
+[0.002054] (lakibeam1) JobStarted: {'identifier': 'lakibeam1'}
+[0.097634] (-) TimerEvent: {}
+[0.127860] (lakibeam1) JobProgress: {'identifier': 'lakibeam1', 'progress': 'cmake'}
+[0.129519] (lakibeam1) Command: {'cmd': ['/usr/local/bin/cmake', '/root/main_controller/src/Lakibeam_ROS2_Driver', '-DCMAKE_INSTALL_PREFIX=/root/main_controller/src/install/lakibeam1'], 'cwd': '/root/main_controller/src/build/lakibeam1', 'env': OrderedDict([('OPENBLAS_CORETYPE', 'ARMV8'), ('PYTHONIOENCODING', 'utf-8'), ('HOSTNAME', 'navod-desktop'), ('LD_LIBRARY_PATH', '/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib:'), ('SHLVL', '1'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/opt/ros/humble/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('PKG_CONFIG_PATH', '/opt/ros/humble/install/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/humble/install/lib/pkgconfig'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/install/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/humble'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('AMENT_PREFIX_PATH', '/opt/ros/humble/install'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('PWD', '/root/main_controller/src/build/lakibeam1'), ('QT_QPA_PLATFORM', 'xcb'), ('PYTHONPATH', '/opt/ros/humble/install/lib/python3.6/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble/install')]), 'shell': False}
+[0.197959] (-) TimerEvent: {}
+[0.298913] (-) TimerEvent: {}
+[0.399657] (-) TimerEvent: {}
+[0.500736] (-) TimerEvent: {}
+[0.601595] (-) TimerEvent: {}
+[0.702368] (-) TimerEvent: {}
+[0.803127] (-) TimerEvent: {}
+[0.903989] (-) TimerEvent: {}
+[0.976066] (lakibeam1) StdoutLine: {'line': b'-- The C compiler identification is GNU 7.5.0\n'}
+[1.004239] (-) TimerEvent: {}
+[1.105084] (-) TimerEvent: {}
+[1.205857] (-) TimerEvent: {}
+[1.306717] (-) TimerEvent: {}
+[1.407499] (-) TimerEvent: {}
+[1.431386] (lakibeam1) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 7.5.0\n'}
+[1.507682] (-) TimerEvent: {}
+[1.521121] (lakibeam1) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.607880] (-) TimerEvent: {}
+[1.708736] (-) TimerEvent: {}
+[1.744831] (lakibeam1) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.793014] (lakibeam1) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.796450] (lakibeam1) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.799159] (lakibeam1) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.808926] (-) TimerEvent: {}
+[1.843703] (lakibeam1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.909172] (-) TimerEvent: {}
+[2.009941] (-) TimerEvent: {}
+[2.088828] (lakibeam1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.110142] (-) TimerEvent: {}
+[2.138409] (lakibeam1) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.139839] (lakibeam1) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.142233] (lakibeam1) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.184648] (lakibeam1) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/install/share/ament_cmake/cmake)\n'}
+[2.210361] (-) TimerEvent: {}
+[2.311020] (-) TimerEvent: {}
+[2.411774] (-) TimerEvent: {}
+[2.512561] (-) TimerEvent: {}
+[2.613515] (-) TimerEvent: {}
+[2.714330] (-) TimerEvent: {}
+[2.815185] (-) TimerEvent: {}
+[2.916036] (-) TimerEvent: {}
+[3.016943] (-) TimerEvent: {}
+[3.117740] (-) TimerEvent: {}
+[3.218459] (-) TimerEvent: {}
+[3.319192] (-) TimerEvent: {}
+[3.419934] (-) TimerEvent: {}
+[3.520784] (-) TimerEvent: {}
+[3.621581] (-) TimerEvent: {}
+[3.722374] (-) TimerEvent: {}
+[3.823151] (-) TimerEvent: {}
+[3.923845] (-) TimerEvent: {}
+[4.024583] (-) TimerEvent: {}
+[4.125277] (-) TimerEvent: {}
+[4.225949] (-) TimerEvent: {}
+[4.326682] (-) TimerEvent: {}
+[4.427475] (-) TimerEvent: {}
+[4.528291] (-) TimerEvent: {}
+[4.629036] (-) TimerEvent: {}
+[4.729724] (-) TimerEvent: {}
+[4.830486] (-) TimerEvent: {}
+[4.931259] (-) TimerEvent: {}
+[5.032055] (-) TimerEvent: {}
+[5.132886] (-) TimerEvent: {}
+[5.233604] (-) TimerEvent: {}
+[5.334432] (-) TimerEvent: {}
+[5.435392] (-) TimerEvent: {}
+[5.536258] (-) TimerEvent: {}
+[5.637031] (-) TimerEvent: {}
+[5.737844] (-) TimerEvent: {}
+[5.838646] (-) TimerEvent: {}
+[5.939486] (-) TimerEvent: {}
+[6.040450] (-) TimerEvent: {}
+[6.141253] (-) TimerEvent: {}
+[6.242061] (-) TimerEvent: {}
+[6.342869] (-) TimerEvent: {}
+[6.443648] (-) TimerEvent: {}
+[6.544400] (-) TimerEvent: {}
+[6.645085] (-) TimerEvent: {}
+[6.676505] (lakibeam1) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.6 (found version "3.6.9") found components: Interpreter \n'}
+[6.745264] (-) TimerEvent: {}
+[6.846027] (-) TimerEvent: {}
+[6.946791] (-) TimerEvent: {}
+[7.047514] (-) TimerEvent: {}
+[7.148446] (-) TimerEvent: {}
+[7.249223] (-) TimerEvent: {}
+[7.337395] (lakibeam1) StdoutLine: {'line': b'-- Found rclcpp: 16.0.5 (/opt/ros/humble/install/share/rclcpp/cmake)\n'}
+[7.349376] (-) TimerEvent: {}
+[7.450050] (-) TimerEvent: {}
+[7.550770] (-) TimerEvent: {}
+[7.651503] (-) TimerEvent: {}
+[7.689552] (lakibeam1) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/install/share/rosidl_generator_c/cmake)\n'}
+[7.729584] (lakibeam1) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/install/share/rosidl_adapter/cmake)\n'}
+[7.751670] (-) TimerEvent: {}
+[7.797087] (lakibeam1) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/install/share/rosidl_generator_cpp/cmake)\n'}
+[7.851868] (-) TimerEvent: {}
+[7.912712] (lakibeam1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.952042] (-) TimerEvent: {}
+[8.052854] (-) TimerEvent: {}
+[8.061133] (lakibeam1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.153033] (-) TimerEvent: {}
+[8.253815] (-) TimerEvent: {}
+[8.354647] (-) TimerEvent: {}
+[8.455417] (-) TimerEvent: {}
+[8.556245] (-) TimerEvent: {}
+[8.581468] (lakibeam1) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/install/share/rmw_implementation_cmake/cmake)\n'}
+[8.602272] (lakibeam1) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/install/share/rmw_cyclonedds_cpp/cmake)\n'}
+[8.656506] (-) TimerEvent: {}
+[8.757211] (-) TimerEvent: {}
+[8.847377] (lakibeam1) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[8.857365] (-) TimerEvent: {}
+[8.909734] (lakibeam1) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[8.957558] (-) TimerEvent: {}
+[9.058320] (-) TimerEvent: {}
+[9.138713] (lakibeam1) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[9.139639] (lakibeam1) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[9.158551] (-) TimerEvent: {}
+[9.259437] (-) TimerEvent: {}
+[9.312042] (lakibeam1) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[9.312904] (lakibeam1) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[9.359635] (-) TimerEvent: {}
+[9.460573] (-) TimerEvent: {}
+[9.515155] (lakibeam1) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[9.518842] (lakibeam1) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[9.560850] (-) TimerEvent: {}
+[9.661672] (-) TimerEvent: {}
+[9.762492] (-) TimerEvent: {}
+[9.863319] (-) TimerEvent: {}
+[9.964131] (-) TimerEvent: {}
+[10.064953] (-) TimerEvent: {}
+[10.165880] (-) TimerEvent: {}
+[10.266701] (-) TimerEvent: {}
+[10.367469] (-) TimerEvent: {}
+[10.468233] (-) TimerEvent: {}
+[10.568972] (-) TimerEvent: {}
+[10.577820] (lakibeam1) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.0 (/opt/ros/humble/install/share/pcl_conversions/cmake)\n'}
+[10.669153] (-) TimerEvent: {}
+[10.769967] (-) TimerEvent: {}
+[10.870742] (-) TimerEvent: {}
+[10.971511] (-) TimerEvent: {}
+[11.072316] (-) TimerEvent: {}
+[11.173122] (-) TimerEvent: {}
+[11.273844] (-) TimerEvent: {}
+[11.374599] (-) TimerEvent: {}
+[11.475382] (-) TimerEvent: {}
+[11.576193] (-) TimerEvent: {}
+[11.677005] (-) TimerEvent: {}
+[11.777824] (-) TimerEvent: {}
+[11.878602] (-) TimerEvent: {}
+[11.979390] (-) TimerEvent: {}
+[12.080185] (-) TimerEvent: {}
+[12.181043] (-) TimerEvent: {}
+[12.281811] (-) TimerEvent: {}
+[12.382590] (-) TimerEvent: {}
+[12.395224] (lakibeam1) StdoutLine: {'line': b'-- Found rclpy: 3.3.9 (/opt/ros/humble/install/share/rclpy/cmake)\n'}
+[12.482822] (-) TimerEvent: {}
+[12.583800] (-) TimerEvent: {}
+[12.685102] (-) TimerEvent: {}
+[12.753050] (lakibeam1) StdoutLine: {'line': b'-- Found CURL: /usr/lib/aarch64-linux-gnu/libcurl.so (found version "7.58.0")  \n'}
+[12.766885] (lakibeam1) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/install/share/ament_lint_auto/cmake)\n'}
+[12.785263] (-) TimerEvent: {}
+[12.886058] (-) TimerEvent: {}
+[12.986844] (-) TimerEvent: {}
+[13.087639] (-) TimerEvent: {}
+[13.188415] (-) TimerEvent: {}
+[13.289215] (-) TimerEvent: {}
+[13.390018] (-) TimerEvent: {}
+[13.422967] (lakibeam1) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[13.424004] (lakibeam1) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[13.424677] (lakibeam1) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[13.431491] (lakibeam1) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[13.441736] (lakibeam1) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[13.448577] (lakibeam1) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[13.478750] (lakibeam1) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[13.479393] (lakibeam1) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[13.485904] (lakibeam1) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[13.490158] (-) TimerEvent: {}
+[13.502781] (lakibeam1) StdoutLine: {'line': b'-- Configuring done (13.1s)\n'}
+[13.570267] (lakibeam1) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[13.578581] (lakibeam1) StdoutLine: {'line': b'-- Build files have been written to: /root/main_controller/src/build/lakibeam1\n'}
+[13.590404] (-) TimerEvent: {}
+[13.646872] (lakibeam1) CommandEnded: {'returncode': 0}
+[13.653632] (lakibeam1) JobProgress: {'identifier': 'lakibeam1', 'progress': 'build'}
+[13.653839] (lakibeam1) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/root/main_controller/src/build/lakibeam1', '--', '-j4', '-l4'], 'cwd': '/root/main_controller/src/build/lakibeam1', 'env': OrderedDict([('OPENBLAS_CORETYPE', 'ARMV8'), ('PYTHONIOENCODING', 'utf-8'), ('HOSTNAME', 'navod-desktop'), ('LD_LIBRARY_PATH', '/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib:'), ('SHLVL', '1'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/opt/ros/humble/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('PKG_CONFIG_PATH', '/opt/ros/humble/install/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/humble/install/lib/pkgconfig'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/install/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/humble'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('AMENT_PREFIX_PATH', '/opt/ros/humble/install'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('PWD', '/root/main_controller/src/build/lakibeam1'), ('QT_QPA_PLATFORM', 'xcb'), ('PYTHONPATH', '/opt/ros/humble/install/lib/python3.6/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble/install')]), 'shell': False}
+[13.690646] (-) TimerEvent: {}
+[13.791540] (-) TimerEvent: {}
+[13.865394] (lakibeam1) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/lakibeam1_scan_node.dir/src/lakibeam1_scan.cpp.o\x1b[0m\n'}
+[13.866173] (lakibeam1) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/lakibeam1_scan_node.dir/src/remote.cpp.o\x1b[0m\n'}
+[13.891738] (-) TimerEvent: {}
+[13.992526] (-) TimerEvent: {}
+[14.093342] (-) TimerEvent: {}
+[14.194114] (-) TimerEvent: {}
+[14.294866] (-) TimerEvent: {}
+[14.395738] (-) TimerEvent: {}
+[14.496501] (-) TimerEvent: {}
+[14.597274] (-) TimerEvent: {}
+[14.698080] (-) TimerEvent: {}
+[14.798873] (-) TimerEvent: {}
+[14.899684] (-) TimerEvent: {}
+[15.000585] (-) TimerEvent: {}
+[15.101416] (-) TimerEvent: {}
+[15.202162] (-) TimerEvent: {}
+[15.302924] (-) TimerEvent: {}
+[15.403760] (-) TimerEvent: {}
+[15.506382] (-) TimerEvent: {}
+[15.607365] (-) TimerEvent: {}
+[15.708219] (-) TimerEvent: {}
+[15.809060] (-) TimerEvent: {}
+[15.909830] (-) TimerEvent: {}
+[16.010673] (-) TimerEvent: {}
+[16.111528] (-) TimerEvent: {}
+[16.212827] (-) TimerEvent: {}
+[16.313716] (-) TimerEvent: {}
+[16.414553] (-) TimerEvent: {}
+[16.515706] (-) TimerEvent: {}
+[16.617965] (-) TimerEvent: {}
+[16.718924] (-) TimerEvent: {}
+[16.819768] (-) TimerEvent: {}
+[16.920599] (-) TimerEvent: {}
+[17.021364] (-) TimerEvent: {}
+[17.122206] (-) TimerEvent: {}
+[17.223115] (-) TimerEvent: {}
+[17.324009] (-) TimerEvent: {}
+[17.424921] (-) TimerEvent: {}
+[17.525717] (-) TimerEvent: {}
+[17.626563] (-) TimerEvent: {}
+[17.727417] (-) TimerEvent: {}
+[17.828261] (-) TimerEvent: {}
+[17.929117] (-) TimerEvent: {}
+[18.029899] (-) TimerEvent: {}
+[18.130741] (-) TimerEvent: {}
+[18.231640] (-) TimerEvent: {}
+[18.332522] (-) TimerEvent: {}
+[18.433299] (-) TimerEvent: {}
+[18.534062] (-) TimerEvent: {}
+[18.634903] (-) TimerEvent: {}
+[18.735747] (-) TimerEvent: {}
+[18.836599] (-) TimerEvent: {}
+[18.937374] (-) TimerEvent: {}
+[19.038132] (-) TimerEvent: {}
+[19.138979] (-) TimerEvent: {}
+[19.239794] (-) TimerEvent: {}
+[19.340626] (-) TimerEvent: {}
+[19.441453] (-) TimerEvent: {}
+[19.545057] (-) TimerEvent: {}
+[19.645928] (-) TimerEvent: {}
+[19.746773] (-) TimerEvent: {}
+[19.847613] (-) TimerEvent: {}
+[19.948464] (-) TimerEvent: {}
+[20.050264] (-) TimerEvent: {}
+[20.151126] (-) TimerEvent: {}
+[20.251973] (-) TimerEvent: {}
+[20.355676] (-) TimerEvent: {}
+[20.456545] (-) TimerEvent: {}
+[20.557319] (-) TimerEvent: {}
+[20.658143] (-) TimerEvent: {}
+[20.758972] (-) TimerEvent: {}
+[20.859803] (-) TimerEvent: {}
+[20.960683] (-) TimerEvent: {}
+[21.061514] (-) TimerEvent: {}
+[21.162359] (-) TimerEvent: {}
+[21.263220] (-) TimerEvent: {}
+[21.364079] (-) TimerEvent: {}
+[21.465019] (-) TimerEvent: {}
+[21.565805] (-) TimerEvent: {}
+[21.666710] (-) TimerEvent: {}
+[21.767573] (-) TimerEvent: {}
+[21.868436] (-) TimerEvent: {}
+[21.969224] (-) TimerEvent: {}
+[22.070078] (-) TimerEvent: {}
+[22.170923] (-) TimerEvent: {}
+[22.271776] (-) TimerEvent: {}
+[22.372716] (-) TimerEvent: {}
+[22.473589] (-) TimerEvent: {}
+[22.574410] (-) TimerEvent: {}
+[22.675177] (-) TimerEvent: {}
+[22.776025] (-) TimerEvent: {}
+[22.876901] (-) TimerEvent: {}
+[22.977693] (-) TimerEvent: {}
+[23.078551] (-) TimerEvent: {}
+[23.180452] (-) TimerEvent: {}
+[23.281324] (-) TimerEvent: {}
+[23.382397] (-) TimerEvent: {}
+[23.485155] (-) TimerEvent: {}
+[23.586030] (-) TimerEvent: {}
+[23.686937] (-) TimerEvent: {}
+[23.787996] (-) TimerEvent: {}
+[23.888870] (-) TimerEvent: {}
+[23.989677] (-) TimerEvent: {}
+[24.090450] (-) TimerEvent: {}
+[24.191277] (-) TimerEvent: {}
+[24.292203] (-) TimerEvent: {}
+[24.393177] (-) TimerEvent: {}
+[24.493941] (-) TimerEvent: {}
+[24.594795] (-) TimerEvent: {}
+[24.695642] (-) TimerEvent: {}
+[24.796524] (-) TimerEvent: {}
+[24.897302] (-) TimerEvent: {}
+[24.998161] (-) TimerEvent: {}
+[25.099008] (-) TimerEvent: {}
+[25.200870] (-) TimerEvent: {}
+[25.301712] (-) TimerEvent: {}
+[25.402552] (-) TimerEvent: {}
+[25.503383] (-) TimerEvent: {}
+[25.604211] (-) TimerEvent: {}
+[25.705069] (-) TimerEvent: {}
+[25.805894] (-) TimerEvent: {}
+[25.906699] (-) TimerEvent: {}
+[26.007465] (-) TimerEvent: {}
+[26.108229] (-) TimerEvent: {}
+[26.209129] (-) TimerEvent: {}
+[26.309956] (-) TimerEvent: {}
+[26.410794] (-) TimerEvent: {}
+[26.511638] (-) TimerEvent: {}
+[26.612500] (-) TimerEvent: {}
+[26.713344] (-) TimerEvent: {}
+[26.814143] (-) TimerEvent: {}
+[26.915000] (-) TimerEvent: {}
+[27.015865] (-) TimerEvent: {}
+[27.116772] (-) TimerEvent: {}
+[27.217535] (-) TimerEvent: {}
+[27.318310] (-) TimerEvent: {}
+[27.405378] (lakibeam1) StderrLine: {'line': b'\x1b[01m\x1b[K/root/main_controller/src/Lakibeam_ROS2_Driver/src/remote.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Ksize_t dummy_callback(void*, size_t, size_t, void*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[27.406576] (lakibeam1) StderrLine: {'line': b'\x1b[01m\x1b[K/root/main_controller/src/Lakibeam_ROS2_Driver/src/remote.cpp:16:36:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbuffer\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[27.407234] (lakibeam1) StderrLine: {'line': b' static size_t dummy_callback(void *\x1b[01;35m\x1b[Kbuffer\x1b[m\x1b[K, size_t size, size_t nmemb, void *userp)\n'}
+[27.407829] (lakibeam1) StderrLine: {'line': b'                                    \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[27.408454] (lakibeam1) StderrLine: {'line': b'\x1b[01m\x1b[K/root/main_controller/src/Lakibeam_ROS2_Driver/src/remote.cpp:16:77:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kuserp\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[27.409036] (lakibeam1) StderrLine: {'line': b' static size_t dummy_callback(void *buffer, size_t size, size_t nmemb, void *\x1b[01;35m\x1b[Kuserp\x1b[m\x1b[K)\n'}
+[27.409602] (lakibeam1) StderrLine: {'line': b'                                                                             \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[27.418572] (-) TimerEvent: {}
+[27.519429] (-) TimerEvent: {}
+[27.620317] (-) TimerEvent: {}
+[27.721240] (-) TimerEvent: {}
+[27.822152] (-) TimerEvent: {}
+[27.923043] (-) TimerEvent: {}
+[28.024715] (-) TimerEvent: {}
+[28.125608] (-) TimerEvent: {}
+[28.226559] (-) TimerEvent: {}
+[28.327411] (-) TimerEvent: {}
+[28.428407] (-) TimerEvent: {}
+[28.529174] (-) TimerEvent: {}
+[28.629938] (-) TimerEvent: {}
+[28.730783] (-) TimerEvent: {}
+[28.831633] (-) TimerEvent: {}
+[28.932489] (-) TimerEvent: {}
+[29.033264] (-) TimerEvent: {}
+[29.134071] (-) TimerEvent: {}
+[29.234928] (-) TimerEvent: {}
+[29.335778] (-) TimerEvent: {}
+[29.436687] (-) TimerEvent: {}
+[29.537693] (-) TimerEvent: {}
+[29.643320] (-) TimerEvent: {}
+[29.744157] (-) TimerEvent: {}
+[29.845002] (-) TimerEvent: {}
+[29.945782] (-) TimerEvent: {}
+[30.046560] (-) TimerEvent: {}
+[30.147432] (-) TimerEvent: {}
+[30.248381] (-) TimerEvent: {}
+[30.349219] (-) TimerEvent: {}
+[30.450008] (-) TimerEvent: {}
+[30.550895] (-) TimerEvent: {}
+[30.651766] (-) TimerEvent: {}
+[30.752686] (-) TimerEvent: {}
+[30.853490] (-) TimerEvent: {}
+[30.954269] (-) TimerEvent: {}
+[31.055084] (-) TimerEvent: {}
+[31.155901] (-) TimerEvent: {}
+[31.257061] (-) TimerEvent: {}
+[31.357817] (-) TimerEvent: {}
+[31.458576] (-) TimerEvent: {}
+[31.559324] (-) TimerEvent: {}
+[31.660138] (-) TimerEvent: {}
+[31.761011] (-) TimerEvent: {}
+[31.861799] (-) TimerEvent: {}
+[31.962530] (-) TimerEvent: {}
+[32.063340] (-) TimerEvent: {}
+[32.164156] (-) TimerEvent: {}
+[32.265023] (-) TimerEvent: {}
+[32.365825] (-) TimerEvent: {}
+[32.466672] (-) TimerEvent: {}
+[32.567464] (-) TimerEvent: {}
+[32.668400] (-) TimerEvent: {}
+[32.769200] (-) TimerEvent: {}
+[32.869997] (-) TimerEvent: {}
+[32.970802] (-) TimerEvent: {}
+[33.071627] (-) TimerEvent: {}
+[33.172427] (-) TimerEvent: {}
+[33.273253] (-) TimerEvent: {}
+[33.374096] (-) TimerEvent: {}
+[33.474831] (-) TimerEvent: {}
+[33.575570] (-) TimerEvent: {}
+[33.676458] (-) TimerEvent: {}
+[33.777244] (-) TimerEvent: {}
+[33.878034] (-) TimerEvent: {}
+[33.978822] (-) TimerEvent: {}
+[34.079621] (-) TimerEvent: {}
+[34.180477] (-) TimerEvent: {}
+[34.281295] (-) TimerEvent: {}
+[34.382101] (-) TimerEvent: {}
+[34.482897] (-) TimerEvent: {}
+[34.583725] (-) TimerEvent: {}
+[34.684465] (-) TimerEvent: {}
+[34.785393] (-) TimerEvent: {}
+[34.886377] (-) TimerEvent: {}
+[34.987137] (-) TimerEvent: {}
+[35.087892] (-) TimerEvent: {}
+[35.188727] (-) TimerEvent: {}
+[35.289459] (-) TimerEvent: {}
+[35.390264] (-) TimerEvent: {}
+[35.491054] (-) TimerEvent: {}
+[35.591787] (-) TimerEvent: {}
+[35.692614] (-) TimerEvent: {}
+[35.793353] (-) TimerEvent: {}
+[35.894087] (-) TimerEvent: {}
+[35.994948] (-) TimerEvent: {}
+[36.095033] (lakibeam1) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable lakibeam1_scan_node\x1b[0m\n'}
+[36.095806] (-) TimerEvent: {}
+[36.196467] (-) TimerEvent: {}
+[36.297231] (-) TimerEvent: {}
+[36.398001] (-) TimerEvent: {}
+[36.498892] (-) TimerEvent: {}
+[36.599640] (-) TimerEvent: {}
+[36.700715] (-) TimerEvent: {}
+[36.801551] (-) TimerEvent: {}
+[36.902438] (-) TimerEvent: {}
+[37.003198] (-) TimerEvent: {}
+[37.103927] (-) TimerEvent: {}
+[37.204773] (-) TimerEvent: {}
+[37.305655] (-) TimerEvent: {}
+[37.406517] (-) TimerEvent: {}
+[37.507287] (-) TimerEvent: {}
+[37.519757] (lakibeam1) StdoutLine: {'line': b'[100%] Built target lakibeam1_scan_node\n'}
+[37.560035] (lakibeam1) CommandEnded: {'returncode': 0}
+[37.607580] (-) TimerEvent: {}
+[37.708531] (-) TimerEvent: {}
+[37.789496] (lakibeam1) JobProgress: {'identifier': 'lakibeam1', 'progress': 'install'}
+[37.808758] (-) TimerEvent: {}
+[37.909725] (-) TimerEvent: {}
+[37.975459] (lakibeam1) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/root/main_controller/src/build/lakibeam1'], 'cwd': '/root/main_controller/src/build/lakibeam1', 'env': OrderedDict([('OPENBLAS_CORETYPE', 'ARMV8'), ('PYTHONIOENCODING', 'utf-8'), ('HOSTNAME', 'navod-desktop'), ('LD_LIBRARY_PATH', '/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda-10.2/targets/aarch64-linux/lib:'), ('SHLVL', '1'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/opt/ros/humble/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('PKG_CONFIG_PATH', '/opt/ros/humble/install/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/humble/install/lib/pkgconfig'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/install/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('XDG_RUNTIME_DIR', '/tmp'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/humble'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('AMENT_PREFIX_PATH', '/opt/ros/humble/install'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('PWD', '/root/main_controller/src/build/lakibeam1'), ('QT_QPA_PLATFORM', 'xcb'), ('PYTHONPATH', '/opt/ros/humble/install/lib/python3.6/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble/install')]), 'shell': False}
+[38.009921] (-) TimerEvent: {}
+[38.111052] (-) TimerEvent: {}
+[38.123387] (lakibeam1) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[38.126672] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/ament_index/resource_index/package_run_dependencies/lakibeam1\n'}
+[38.127640] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/ament_index/resource_index/parent_prefix_path/lakibeam1\n'}
+[38.128406] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/environment/ament_prefix_path.sh\n'}
+[38.129717] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/environment/ament_prefix_path.dsv\n'}
+[38.130438] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/environment/path.sh\n'}
+[38.131237] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/environment/path.dsv\n'}
+[38.131869] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/local_setup.bash\n'}
+[38.132594] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/local_setup.sh\n'}
+[38.133204] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/local_setup.zsh\n'}
+[38.133857] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/local_setup.dsv\n'}
+[38.134420] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/package.dsv\n'}
+[38.135015] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/ament_index/resource_index/packages/lakibeam1\n'}
+[38.135735] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/cmake/lakibeam1Config.cmake\n'}
+[38.136361] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/cmake/lakibeam1Config-version.cmake\n'}
+[38.136912] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/package.xml\n'}
+[38.137672] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/lib/lakibeam1/lakibeam1_scan_node\n'}
+[38.144453] (lakibeam1) StdoutLine: {'line': b'-- Set runtime path of "/root/main_controller/src/install/lakibeam1/lib/lakibeam1/lakibeam1_scan_node" to ""\n'}
+[38.145285] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/launch\n'}
+[38.145778] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/launch/lakibeam1_scan.launch.py\n'}
+[38.146400] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/launch/lakibeam1_scan_dual_lidar_view.launch.py\n'}
+[38.147114] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/launch/lakibeam1_scan_view.launch.py\n'}
+[38.147938] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/launch/lakibeam1_scan_dual_lidar.launch.py\n'}
+[38.149032] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/rviz\n'}
+[38.149641] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/rviz/rviz_scan.rviz\n'}
+[38.150181] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/rviz/lakibeam1_scan_dual.rviz\n'}
+[38.150968] (lakibeam1) StdoutLine: {'line': b'-- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/rviz/lakibeam1_scan.rviz\n'}
+[38.176531] (lakibeam1) CommandEnded: {'returncode': 0}
+[38.211660] (-) TimerEvent: {}
+[38.312897] (-) TimerEvent: {}
+[38.413816] (-) TimerEvent: {}
+[38.509026] (lakibeam1) JobEnded: {'identifier': 'lakibeam1', 'rc': 0}
+[38.513992] (-) TimerEvent: {}
+[38.514353] (-) EventReactorShutdown: {}

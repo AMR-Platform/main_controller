@@ -1,0 +1,7 @@
+[01m[K/root/main_controller/src/Lakibeam_ROS2_Driver/src/remote.cpp:[m[K In function ‘[01m[Ksize_t dummy_callback(void*, size_t, size_t, void*)[m[K’:
+[01m[K/root/main_controller/src/Lakibeam_ROS2_Driver/src/remote.cpp:16:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuffer[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ static size_t dummy_callback(void *[01;35m[Kbuffer[m[K, size_t size, size_t nmemb, void *userp)
+                                    [01;35m[K^~~~~~[m[K
+[01m[K/root/main_controller/src/Lakibeam_ROS2_Driver/src/remote.cpp:16:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuserp[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ static size_t dummy_callback(void *buffer, size_t size, size_t nmemb, void *[01;35m[Kuserp[m[K)
+                                                                             [01;35m[K^~~~~[m[K

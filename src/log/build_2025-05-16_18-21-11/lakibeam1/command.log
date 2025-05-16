@@ -1,0 +1,6 @@
+Invoking command in '/root/main_controller/src/build/lakibeam1': /usr/local/bin/cmake /root/main_controller/src/Lakibeam_ROS2_Driver -DCMAKE_INSTALL_PREFIX=/root/main_controller/src/install/lakibeam1
+Invoked command in '/root/main_controller/src/build/lakibeam1' returned '0': /usr/local/bin/cmake /root/main_controller/src/Lakibeam_ROS2_Driver -DCMAKE_INSTALL_PREFIX=/root/main_controller/src/install/lakibeam1
+Invoking command in '/root/main_controller/src/build/lakibeam1': /usr/local/bin/cmake --build /root/main_controller/src/build/lakibeam1 -- -j4 -l4
+Invoked command in '/root/main_controller/src/build/lakibeam1' returned '0': /usr/local/bin/cmake --build /root/main_controller/src/build/lakibeam1 -- -j4 -l4
+Invoking command in '/root/main_controller/src/build/lakibeam1': /usr/local/bin/cmake --install /root/main_controller/src/build/lakibeam1
+Invoked command in '/root/main_controller/src/build/lakibeam1' returned '0': /usr/local/bin/cmake --install /root/main_controller/src/build/lakibeam1

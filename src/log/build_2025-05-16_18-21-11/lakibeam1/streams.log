@@ -1,0 +1,90 @@
+[0.132s] Invoking command in '/root/main_controller/src/build/lakibeam1': /usr/local/bin/cmake /root/main_controller/src/Lakibeam_ROS2_Driver -DCMAKE_INSTALL_PREFIX=/root/main_controller/src/install/lakibeam1
+[0.975s] -- The C compiler identification is GNU 7.5.0
+[1.430s] -- The CXX compiler identification is GNU 7.5.0
+[1.520s] -- Detecting C compiler ABI info
+[1.743s] -- Detecting C compiler ABI info - done
+[1.791s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.795s] -- Detecting C compile features
+[1.798s] -- Detecting C compile features - done
+[1.842s] -- Detecting CXX compiler ABI info
+[2.087s] -- Detecting CXX compiler ABI info - done
+[2.137s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.138s] -- Detecting CXX compile features
+[2.141s] -- Detecting CXX compile features - done
+[2.183s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/install/share/ament_cmake/cmake)
+[6.675s] -- Found Python3: /usr/bin/python3.6 (found version "3.6.9") found components: Interpreter 
+[7.336s] -- Found rclcpp: 16.0.5 (/opt/ros/humble/install/share/rclcpp/cmake)
+[7.688s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/install/share/rosidl_generator_c/cmake)
+[7.728s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/install/share/rosidl_adapter/cmake)
+[7.795s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/install/share/rosidl_generator_cpp/cmake)
+[7.911s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.060s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.580s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/install/share/rmw_implementation_cmake/cmake)
+[8.601s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/install/share/rmw_cyclonedds_cpp/cmake)
+[8.846s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[8.908s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[9.137s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[9.138s] -- Looking for pthread_create in pthreads
+[9.311s] -- Looking for pthread_create in pthreads - not found
+[9.311s] -- Looking for pthread_create in pthread
+[9.514s] -- Looking for pthread_create in pthread - found
+[9.517s] -- Found Threads: TRUE  
+[10.576s] -- Found pcl_conversions: 2.4.0 (/opt/ros/humble/install/share/pcl_conversions/cmake)
+[12.394s] -- Found rclpy: 3.3.9 (/opt/ros/humble/install/share/rclpy/cmake)
+[12.751s] -- Found CURL: /usr/lib/aarch64-linux-gnu/libcurl.so (found version "7.58.0")  
+[12.765s] -- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/install/share/ament_lint_auto/cmake)
+[13.421s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[13.422s] -- Configured cppcheck include dirs: 
+[13.423s] -- Configured cppcheck exclude dirs and/or files: 
+[13.430s] -- Added test 'flake8' to check Python code syntax and style conventions
+[13.440s] -- Added test 'lint_cmake' to check CMake code style
+[13.447s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[13.477s] -- Added test 'uncrustify' to check C / C++ code style
+[13.478s] -- Configured uncrustify additional arguments: 
+[13.484s] -- Added test 'xmllint' to check XML markup files
+[13.501s] -- Configuring done (13.1s)
+[13.569s] -- Generating done (0.0s)
+[13.577s] -- Build files have been written to: /root/main_controller/src/build/lakibeam1
+[13.650s] Invoked command in '/root/main_controller/src/build/lakibeam1' returned '0': /usr/local/bin/cmake /root/main_controller/src/Lakibeam_ROS2_Driver -DCMAKE_INSTALL_PREFIX=/root/main_controller/src/install/lakibeam1
+[13.653s] Invoking command in '/root/main_controller/src/build/lakibeam1': /usr/local/bin/cmake --build /root/main_controller/src/build/lakibeam1 -- -j4 -l4
+[13.864s] [ 66%] [32mBuilding CXX object CMakeFiles/lakibeam1_scan_node.dir/src/lakibeam1_scan.cpp.o[0m
+[13.864s] [ 66%] [32mBuilding CXX object CMakeFiles/lakibeam1_scan_node.dir/src/remote.cpp.o[0m
+[27.404s] [01m[K/root/main_controller/src/Lakibeam_ROS2_Driver/src/remote.cpp:[m[K In function ‘[01m[Ksize_t dummy_callback(void*, size_t, size_t, void*)[m[K’:
+[27.405s] [01m[K/root/main_controller/src/Lakibeam_ROS2_Driver/src/remote.cpp:16:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbuffer[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[27.406s]  static size_t dummy_callback(void *[01;35m[Kbuffer[m[K, size_t size, size_t nmemb, void *userp)
+[27.406s]                                     [01;35m[K^~~~~~[m[K
+[27.407s] [01m[K/root/main_controller/src/Lakibeam_ROS2_Driver/src/remote.cpp:16:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuserp[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[27.407s]  static size_t dummy_callback(void *buffer, size_t size, size_t nmemb, void *[01;35m[Kuserp[m[K)
+[27.408s]                                                                              [01;35m[K^~~~~[m[K
+[36.093s] [100%] [32m[1mLinking CXX executable lakibeam1_scan_node[0m
+[37.518s] [100%] Built target lakibeam1_scan_node
+[37.559s] Invoked command in '/root/main_controller/src/build/lakibeam1' returned '0': /usr/local/bin/cmake --build /root/main_controller/src/build/lakibeam1 -- -j4 -l4
+[37.976s] Invoking command in '/root/main_controller/src/build/lakibeam1': /usr/local/bin/cmake --install /root/main_controller/src/build/lakibeam1
+[38.122s] -- Install configuration: ""
+[38.125s] -- Installing: /root/main_controller/src/install/lakibeam1/share/ament_index/resource_index/package_run_dependencies/lakibeam1
+[38.126s] -- Installing: /root/main_controller/src/install/lakibeam1/share/ament_index/resource_index/parent_prefix_path/lakibeam1
+[38.127s] -- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/environment/ament_prefix_path.sh
+[38.128s] -- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/environment/ament_prefix_path.dsv
+[38.129s] -- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/environment/path.sh
+[38.129s] -- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/environment/path.dsv
+[38.130s] -- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/local_setup.bash
+[38.131s] -- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/local_setup.sh
+[38.131s] -- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/local_setup.zsh
+[38.132s] -- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/local_setup.dsv
+[38.133s] -- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/package.dsv
+[38.133s] -- Installing: /root/main_controller/src/install/lakibeam1/share/ament_index/resource_index/packages/lakibeam1
+[38.134s] -- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/cmake/lakibeam1Config.cmake
+[38.135s] -- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/cmake/lakibeam1Config-version.cmake
+[38.135s] -- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/package.xml
+[38.136s] -- Installing: /root/main_controller/src/install/lakibeam1/lib/lakibeam1/lakibeam1_scan_node
+[38.143s] -- Set runtime path of "/root/main_controller/src/install/lakibeam1/lib/lakibeam1/lakibeam1_scan_node" to ""
+[38.144s] -- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/launch
+[38.144s] -- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/launch/lakibeam1_scan.launch.py
+[38.145s] -- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/launch/lakibeam1_scan_dual_lidar_view.launch.py
+[38.145s] -- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/launch/lakibeam1_scan_view.launch.py
+[38.146s] -- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/launch/lakibeam1_scan_dual_lidar.launch.py
+[38.147s] -- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/rviz
+[38.148s] -- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/rviz/rviz_scan.rviz
+[38.148s] -- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/rviz/lakibeam1_scan_dual.rviz
+[38.149s] -- Installing: /root/main_controller/src/install/lakibeam1/share/lakibeam1/rviz/lakibeam1_scan.rviz
+[38.175s] Invoked command in '/root/main_controller/src/build/lakibeam1' returned '0': /usr/local/bin/cmake --install /root/main_controller/src/build/lakibeam1
