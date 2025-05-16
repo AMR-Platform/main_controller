@@ -1,19 +1,32 @@
-########## Base image is passed in from build.sh ##########
-ARG BASE
-FROM ${BASE}
+# Dockerfile for Jetson Nano ROS2 + Lakibeam Setup
+FROM dustynv/ros:humble-desktop-l4t-r32.7.1
 
-# ─── Common packages (run on BOTH arches) ─────────────────
+# Install build dependencies
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-        python3-vcstool ros-humble-nav2-map-server && \
+    apt-get install -y \
+      build-essential \
+      git \
+      python3-colcon-common-extensions && \
     rm -rf /var/lib/apt/lists/*
 
-# ─── Jetson-only extras ───────────────────────────────────
-RUN if [ "$(uname -m)" = "aarch64" ]; then \
-        apt-get update && apt-get install -y --no-install-recommends \
-            libnvinfer8 libvpi1 && \
-        rm -rf /var/lib/apt/lists/* ; \
-    fi
+# Create and initialize ROS2 workspace
+ENV ROS_WS=/workspace/ros2_ws
+RUN mkdir -p $ROS_WS/src
+WORKDIR $ROS_WS/src
 
-# Workspace mountpoint
-WORKDIR /workspace
+# Clone the Lakibeam ROS2 driver
+RUN git clone https://github.com/RichbeamTechnology/Lakibeam_ROS2_Driver.git
+
+# Build the workspace
+WORKDIR $ROS_WS
+RUN . /opt/ros/humble/setup.sh && \
+    colcon build --symlink-install && \
+    rm -rf build log install
+
+# Source ROS2 and workspace at container start
+RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc && \
+    echo "source $ROS_WS/install/setup.bash" >> ~/.bashrc
+
+# Default entrypoint
+ENTRYPOINT ["/ros_entrypoint.sh"]
+CMD ["bash"]

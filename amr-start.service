@@ -1,0 +1,16 @@
+[Unit]
+Description=AMR Auto-Startup Service
+After=graphical.target docker.service
+Wants=graphical.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/amr-startup.sh
+StandardOutput=journal
+StandardError=journal
+User=navod
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/navod/.Xauthority
+
+[Install]
+WantedBy=multi-user.target
