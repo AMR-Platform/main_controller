@@ -14,4 +14,4 @@ xhost +local:root
 /usr/local/bin/splash.py &
 
 # 4) Start your container (replace CONTAINER_NAME below)
-/usr/bin/docker start -ai CONTAINER_NAME
+/usr/bin/docker start -ai eloquent_knuth
