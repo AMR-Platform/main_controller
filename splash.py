@@ -1,129 +1,181 @@
 #!/usr/bin/env python3
 import pygame
+import sys
 import time
 import math
 import os
 
-# Set environment variables to prevent D-Bus errors
+# Force hardware acceleration and disable problematic subsystems
 os.environ['SDL_VIDEODRIVER'] = 'x11'
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'  # Hide pygame welcome message
+os.environ['DBUS_FATAL_WARNINGS'] = '0'  # Prevent D-Bus warnings from being fatal
 
-# Basic initialization with error handling
-pygame.init()
-pygame.font.init()  # Explicitly initialize font
+# Safest approach to initialize pygame for system services
+pygame.display.init()
+pygame.font.init()
 
-# Create a simpler version that should be more compatible
+# Get the display info safely
 try:
     info = pygame.display.Info()
-    width, height = info.current_w, info.current_h
-    screen = pygame.display.set_mode((width, height), pygame.FULLSCREEN)
+    WIDTH, HEIGHT = info.current_w, info.current_h
 except:
-    # Fallback to windowed mode if fullscreen fails
-    width, height = 1280, 720
-    screen = pygame.display.set_mode((width, height))
+    # Fallback to common resolution if info can't be obtained
+    WIDTH, HEIGHT = 1920, 1080
+
+# Setup fullscreen display with error handling
+try:
+    screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.FULLSCREEN | pygame.NOFRAME)
+except pygame.error:
+    try:
+        # Try again with just FULLSCREEN
+        screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.FULLSCREEN)
+    except pygame.error:
+        # Last resort - windowed mode at full resolution
+        screen = pygame.display.set_mode((WIDTH, HEIGHT))
+
+# Set window title (even though it won't be visible in fullscreen)
+pygame.display.set_caption("AMR TEAM 1")
 
 # Colors
-background_color = (0, 0, 0)
-text_color = (255, 255, 255)
-accent_color = (0, 120, 255)
+BACKGROUND = (0, 0, 0)  # Black
+TEXT_COLOR = (255, 255, 255)  # White
+ACCENT_COLOR = (0, 120, 255)  # Blue
 
-# Clock for controlling framerate
+# Create a robust clock object for timing
 clock = pygame.time.Clock()
 FPS = 60
 
-# Text setup
-main_font = pygame.font.Font(None, 180)
-subtitle_font = pygame.font.Font(None, 60)
-
-# Animation duration
-duration = 5.0  # seconds
+# Animation settings
 start_time = time.time()
+duration = 5.0  # seconds
 
-# Main loop
+# Font setup with fallbacks
+try:
+    main_font = pygame.font.Font(None, min(200, HEIGHT // 5))  # Scale font for different resolutions
+    sub_font = pygame.font.Font(None, min(60, HEIGHT // 15))
+except pygame.error:
+    # Fallback to system fonts if pygame default font fails
+    fonts = pygame.font.get_fonts()
+    if fonts:
+        try:
+            main_font = pygame.font.SysFont(fonts[0], min(200, HEIGHT // 5))
+            sub_font = pygame.font.SysFont(fonts[0], min(60, HEIGHT // 15))
+        except:
+            # If all else fails, exit gracefully
+            print("Fatal error: Cannot initialize fonts")
+            pygame.quit()
+            sys.exit(1)
+
+# Main animation loop with robust error handling
 running = True
 while running:
-    # Handle events
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT or (event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE):
+    try:
+        # Process events
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT or (event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE):
+                running = False
+        
+        # Calculate animation time and exit if duration exceeded
+        current_time = time.time()
+        elapsed = current_time - start_time
+        if elapsed >= duration:
             running = False
-    
-    # Calculate animation progress
-    elapsed = time.time() - start_time
-    if elapsed >= duration:
-        running = False
-        continue
-    
-    progress = elapsed / duration
-    
-    # Clear screen
-    screen.fill(background_color)
-    
-    # Draw simplified animated background
-    for i in range(5):  # Reduced number of circles
-        radius = int(min(width, height) * 0.4 * (0.6 + 0.4 * math.sin(progress * math.pi * 2 + i * 0.5)))
-        thickness = max(1, int(4 + 2 * math.sin(progress * math.pi * 3)))
-        pygame.draw.circle(screen, accent_color, (width // 2, height // 2), radius, thickness)
-    
-    # Main text animation (simpler version)
-    if progress < 0.2:
-        # Fade in
-        alpha = int(255 * (progress / 0.2))
-        size = int(180 * (0.5 + 0.5 * (progress / 0.2)))
-        main_font = pygame.font.Font(None, size)
-    elif progress > 0.8:
-        # Fade out
-        alpha = int(255 * (1 - (progress - 0.8) / 0.2))
-    else:
-        # Full visibility with slight pulsing
-        alpha = 255
-        pulse = 1.0 + 0.05 * math.sin(progress * 20)
-        main_font = pygame.font.Font(None, int(180 * pulse))
-    
-    # Render main text
-    main_text = main_font.render("AMR TEAM 1", True, text_color)
-    main_rect = main_text.get_rect(center=(width // 2, height // 2))
-    
-    # Create a temporary surface for alpha blending if needed
-    if alpha < 255:
-        temp_surface = pygame.Surface(main_text.get_size(), pygame.SRCALPHA)
-        temp_surface.fill((255, 255, 255, 0))
-        temp_surface.blit(main_text, (0, 0))
-        temp_surface.set_alpha(alpha)
-        screen.blit(temp_surface, main_rect)
-    else:
-        screen.blit(main_text, main_rect)
-    
-    # Subtitle text (appears after main text starts showing)
-    if progress > 0.3:
-        subtitle_alpha = int(255 * min((progress - 0.3) / 0.2, 1.0))
-        if progress > 0.8:
-            subtitle_alpha = int(subtitle_alpha * (1 - (progress - 0.8) / 0.2))
+            continue
         
-        subtitle_text = subtitle_font.render("Autonomous Mobile Robotics", True, text_color)
-        subtitle_rect = subtitle_text.get_rect(center=(width // 2, height // 2 + 100))
+        # Animation progress from 0 to 1
+        progress = min(elapsed / duration, 1.0)
         
-        # Alpha blending for subtitle
-        if subtitle_alpha < 255:
-            sub_surface = pygame.Surface(subtitle_text.get_size(), pygame.SRCALPHA)
-            sub_surface.fill((255, 255, 255, 0))
-            sub_surface.blit(subtitle_text, (0, 0))
-            sub_surface.set_alpha(subtitle_alpha)
-            screen.blit(sub_surface, subtitle_rect)
+        # Clear screen
+        screen.fill(BACKGROUND)
+        
+        # Draw animated background circles
+        center_x, center_y = WIDTH // 2, HEIGHT // 2
+        for i in range(5):
+            radius = int(min(WIDTH, HEIGHT) * 0.4 * (0.6 + 0.4 * math.sin(progress * math.pi * 2 + i * 0.5)))
+            thickness = max(1, int(4 + 2 * math.sin(progress * math.pi * 3)))
+            pygame.draw.circle(screen, ACCENT_COLOR, (center_x, center_y), radius, thickness)
+        
+        # Text animations
+        text_scale = 1.0 + 0.05 * math.sin(progress * math.pi * 4)
+        
+        # Main title with animation
+        if progress < 0.3:
+            # Fade in effect
+            alpha = int(255 * (progress / 0.3))
+            main_text = main_font.render("AMR TEAM 1", True, TEXT_COLOR)
+            main_rect = main_text.get_rect(center=(center_x, center_y))
+            
+            # Apply alpha
+            temp = pygame.Surface(main_text.get_size(), pygame.SRCALPHA)
+            temp.blit(main_text, (0, 0))
+            temp.set_alpha(alpha)
+            screen.blit(temp, main_rect)
+            
+        elif progress > 0.8:
+            # Fade out effect
+            alpha = int(255 * (1 - (progress - 0.8) / 0.2))
+            main_text = main_font.render("AMR TEAM 1", True, TEXT_COLOR)
+            main_rect = main_text.get_rect(center=(center_x, center_y))
+            
+            # Apply alpha
+            temp = pygame.Surface(main_text.get_size(), pygame.SRCALPHA)
+            temp.blit(main_text, (0, 0))
+            temp.set_alpha(alpha)
+            screen.blit(temp, main_rect)
+            
         else:
-            screen.blit(subtitle_text, subtitle_rect)
-    
-    # Simple particle effects (just a few to avoid performance issues)
-    for i in range(10):  # Reduced number of particles
-        angle = progress * 10 + i * (math.pi * 2 / 10)
-        distance = 200 + 50 * math.sin(progress * 5 + i)
-        x = width // 2 + int(math.cos(angle) * distance)
-        y = height // 2 + int(math.sin(angle) * distance)
-        size = int(3 + 2 * math.sin(progress * 8 + i))
+            # Normal display with slight pulsing
+            main_text = main_font.render("AMR TEAM 1", True, TEXT_COLOR)
+            text_width, text_height = main_text.get_size()
+            scaled_width, scaled_height = int(text_width * text_scale), int(text_height * text_scale)
+            
+            # Only scale if it makes sense
+            if abs(text_scale - 1.0) > 0.01:
+                try:
+                    main_text = pygame.transform.smoothscale(main_text, (scaled_width, scaled_height))
+                except:
+                    # Skip scaling if it fails
+                    pass
+                    
+            main_rect = main_text.get_rect(center=(center_x, center_y))
+            screen.blit(main_text, main_rect)
         
-        pygame.draw.circle(screen, text_color, (x, y), size)
-    
-    # Update display
-    pygame.display.flip()
-    clock.tick(FPS)
+        # Subtitle with separate fade timings
+        if progress > 0.2 and progress < 0.9:
+            subtitle_alpha = int(255 * min((progress - 0.2) / 0.2, 1.0))
+            if progress > 0.7:
+                subtitle_alpha = int(subtitle_alpha * (1 - (progress - 0.7) / 0.2))
+                
+            sub_text = sub_font.render("Autonomous Mobile Robotics", True, TEXT_COLOR)
+            sub_rect = sub_text.get_rect(center=(center_x, center_y + 100))
+            
+            # Apply alpha
+            temp = pygame.Surface(sub_text.get_size(), pygame.SRCALPHA)
+            temp.blit(sub_text, (0, 0))
+            temp.set_alpha(subtitle_alpha)
+            screen.blit(temp, sub_rect)
+        
+        # Simple particle effects
+        for i in range(15):
+            angle = progress * 10 + i * (math.pi * 2 / 15)
+            distance = 200 + 50 * math.sin(progress * 5 + i)
+            x = center_x + int(math.cos(angle) * distance)
+            y = center_y + int(math.sin(angle) * distance)
+            size = int(3 + 2 * math.sin(progress * 8 + i))
+            
+            pygame.draw.circle(screen, TEXT_COLOR, (x, y), size)
+        
+        # Update display
+        pygame.display.flip()
+        
+        # Control frame rate
+        clock.tick(FPS)
+        
+    except Exception as e:
+        print(f"Error in animation loop: {e}")
+        # Try to continue despite errors
+        time.sleep(0.1)
 
-# Clean up
+# Ensure pygame quits cleanly
 pygame.quit()
+sys.exit(0)
